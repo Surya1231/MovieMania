@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/other.png">
+    <title> Movies</title>
+  </head>
+  <body>
+    <div class="top">
+      <span id="head">Movie Mania</span><br>
+      Search Your Movie here
+      <span id="design"> Developed By Suryaprakash agarwal </span>
+    </div>
+    <nav class="nav">
+      <form class="" action="/post" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" placeholder="title" required>
+        <label for="from">From:</label>
+        <input type="number" name="from" placeholder="year">
+        <label for="to">To:</label>
+        <input type="number" name="to" placeholder="year">
+        <button type="submit" name="button" id="submit"> submit</button>
+      </form>
+    </nav>
+
+    <div class="mainbody">
+      <div class="container">
+        Total Results Found : <%= total %>
+        <hr>
+        <%  movie.forEach(function(l){ %>
+        <div class="movie">
+          <% if(l.Poster != "N/A"){%>
+          <img src="<%=l.Poster%>" alt="The Image is Not Available">
+        <%  } else{%>
+          <img src="other.png" alt="Alter Not Available">
+        <%}%>
+
+
+          <br>
+          <span><%= l.Title %></span><br>
+          <span>(<%= l.Year %>)</span>
+        </div>
+        <% }); %>
+        <div class="clear"> </div> <br>
+        <hr>
+        <div class="bottom">
+          <% if(total>100) var l = total/10+1; else var l = total/10 +1; %>
+          <form class="" action="/pageganger" method="post">
+            <% for(var i=1; i<=l ; i++){%>
+              <% if(i!=pageon){%>
+              <button class = "page" type="submit" name="page" value="<%= i %>"><%= i %></button>
+              <% } else{ %>
+                <button class = "page selected" type="submit" name="page" value="<%= i %>"><%= i %> </button>
+            <% }} %>
+            <div class="clear"> </div>
+          </form>
+
+        </div>
+          <hr>
+        </div>
+
+
+      </div>
+
+    </body>
+</html>

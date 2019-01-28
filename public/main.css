@@ -1,0 +1,150 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.top
+{ padding : 1.5%;
+  padding-left: 3%;
+  width: 95.5%;
+  color: white;
+  background: #800000;
+  font-size: 2vw;
+  font-family: cursive;
+
+}
+
+#head{
+  font-size: 4vw;
+  font-family:sans-serif;
+  text-transform: uppercase;
+}
+
+#design{
+  float: right;
+}
+
+.nav{
+  background: #EA8A8A;
+  padding: 0.5%;
+  padding-left: 3%;
+  font-family: cursive;
+  font-size: 2vw;
+  color:  #800000;
+}
+
+input{
+  margin-right: 10px;
+  color:#800000;
+  padding-left: 1%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  width: 20%;
+  font-size: 1.5vw;
+}
+
+input[type="number"]{
+  width: 10% !important;
+}
+
+#submit{
+  margin-left: 2%;
+  color: #800000;
+  background: #EA8A8A;
+  border: 0;
+  width: 10%;
+  padding :0.4%;
+  text-transform: uppercase;
+  font-size: 2vw;
+  border: 1px solid #800000;
+  border-radius: 5%;
+}
+
+#submit:hover{
+   color: white;
+   background: #800000;
+}
+
+.mainbody{
+  width: 100%;
+  height: auto;
+  background: black;
+  color: white;
+  overflow-x: auto;
+}
+
+.container{
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+  font-size: 2vw;
+}
+
+.movie{
+  padding: 1%;
+  border: 1px solid #800000;
+  text-align: center;
+  font-family: sans-serif;
+  font-size:calc(3px + 1vw);
+  float: left;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  width: 15%;
+  height: 25vw;
+  /* min-width: 140px;
+  min-height: 250px; */
+  overflow: hidden;
+}
+
+.movie img{
+  width: 98%;
+  height: 18vw;
+  /* min-height: 200px;
+  line-height: 50px; */
+  text-align: center;
+  color: #a51818;
+}
+
+.movie:hover{
+  transform:scale(1.1);
+  border: 1px solid yellow;
+}
+
+.clear{
+  clear: both;
+}
+
+.bottom{
+  width: auto;
+  height: 4vw;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2%;
+  overflow: auto;
+}
+
+.page{
+
+  text-align: center;
+  padding: 0;
+  width: 3vw;
+  margin:1%;
+  float: left;
+  font-size: 2vw;
+  background:#EA8A8A;
+  color: black;
+
+}
+
+.page:hover{
+  background: #800000;
+  color: white;
+}
+
+.selected{
+  background: #800000;
+  color: white;
+}
